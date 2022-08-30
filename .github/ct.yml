@@ -46,9 +46,12 @@ jobs:
       - name: Generate HTML report
         run: npm run report:generate -t "${{ github.event.pull_request.title }}"
         continue-on-error: true
-      - name: Deploy report page
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Save code coverage results
+        uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public-report
-        continue-on-error: true
+          name: test-report
+          path: |
+            public-report
+            mochawesome-report/public-report/screenshots/**
+            mochawesome-report/public-report/videos/**
+          retention-days: 3
