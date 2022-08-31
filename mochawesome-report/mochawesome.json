@@ -1,0 +1,361 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-08-30T10:49:20.937Z",
+    "end": "2022-08-30T10:50:23.829Z",
+    "duration": 62892,
+    "testsRegistered": 11,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 10,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "0f6396b4-7c56-473a-b462-0ae1b8bee371",
+      "title": "",
+      "fullFile": "cypress/integration/guilds/Guilds.spec.ts",
+      "file": "cypress/integration/guilds/Guilds.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9404dd9-eb36-44da-b502-bde97c1d83c2",
+          "title": "Guilds",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should trigger Create Proposal",
+              "fullTitle": "Guilds Should trigger Create Proposal",
+              "timedOut": null,
+              "duration": 62745,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {
+                "message": "CypressError: Cypress command timeout of `30000ms` exceeded.\n\nBecause this error occurred during a `before all` hook we are skipping all of the remaining tests.",
+                "estack": "CypressError: Cypress command timeout of `30000ms` exceeded.\n\nBecause this error occurred during a `before all` hook we are skipping all of the remaining tests.\n    at cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:176361:18)\n    at Object.errByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:176430:10)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:178196:80",
+                "diff": null
+              },
+              "uuid": "d62923e6-f5c3-4cb6-890f-dae925895c91",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "167f3a7a-acfd-4e2c-8e95-5a41948b144b",
+              "title": "Landing page",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should show deployed guilds in LandingPage",
+                  "fullTitle": "Guilds Landing page Should show deployed guilds in LandingPage",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].goToGuildsPage();\ncy.findAllByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].guildCardId).should('have.length', _support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].deployedGuilds.length);\nObject.values(_utils__WEBPACK_IMPORTED_MODULE_1__[\"DEPLOYED_GUILDS_NAMES\"]).forEach(function (name) {\n    cy.contains(name).should('be.visible');\n});",
+                  "err": {},
+                  "uuid": "7f1e0397-8f4c-4e0a-af6e-749f3d6888d7",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Should redirect to DXDGuild page",
+                  "fullTitle": "Guilds Landing page Should redirect to DXDGuild page",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].goToGuildsPage();\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickOnGuildCard(name);",
+                  "err": {},
+                  "uuid": "74f9cdb3-8076-44fd-9ddf-291bbe1c055b",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Should redirect to REPGuild page",
+                  "fullTitle": "Guilds Landing page Should redirect to REPGuild page",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].goToGuildsPage();\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickOnGuildCard(name);",
+                  "err": {},
+                  "uuid": "1b518a86-0cd9-494e-b7b3-c3847537b6c6",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Should redirect to SWPRGuild page",
+                  "fullTitle": "Guilds Landing page Should redirect to SWPRGuild page",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].goToGuildsPage();\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickOnGuildCard(name);",
+                  "err": {},
+                  "uuid": "97e7a49d-1c0c-47d7-b01d-61d5ca972d71",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "7f1e0397-8f4c-4e0a-af6e-749f3d6888d7",
+                "74f9cdb3-8076-44fd-9ddf-291bbe1c055b",
+                "1b518a86-0cd9-494e-b7b3-c3847537b6c6",
+                "97e7a49d-1c0c-47d7-b01d-61d5ca972d71"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "fb5f84ec-ee28-4db2-9b28-7102271a35e0",
+              "title": "Guild page",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should render proper components on Guild page",
+                  "fullTitle": "Guilds Guild page Should render proper components on Guild page",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].goToGuildsPage(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].deployedGuilds[0]);\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].shouldRenderProposalsList();\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].shouldRenderSidebar();",
+                  "err": {},
+                  "uuid": "91499f81-aee1-4f0c-b1b3-991076fa329f",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "91499f81-aee1-4f0c-b1b3-991076fa329f"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "cc538ca0-fd84-4e10-8707-3b0339737dee",
+              "title": "Lock tokens",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Should be able to connect with metamask account",
+                  "fullTitle": "Guilds Lock tokens Should be able to connect with metamask account",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].goToGuildsPage();\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickOnGuildCard(_utils__WEBPACK_IMPORTED_MODULE_1__[\"DEPLOYED_GUILDS_NAMES\"].DXDGuild);\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].connectToMetamask(testAcccount.name);",
+                  "err": {},
+                  "uuid": "fa520bdb-89f8-42e9-9a8b-2a9ff26cc304",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Should open lock modal",
+                  "fullTitle": "Guilds Lock tokens Should open lock modal",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].openStakeTokensModalBtn)\n    .should('be.visible')\n    .click();\ncy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].stakeTokensModal).should('be.visible');\ncy.findByText('Stake DXDao on localhost tokens').should('be.visible');",
+                  "err": {},
+                  "uuid": "547b02ac-73af-45d1-bf44-d4c0dca6f425",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Should set max amount, approve spending and close modal",
+                  "fullTitle": "Guilds Lock tokens Should set max amount, approve spending and close modal",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.wait(2000);\ncy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].stakeAmountMaxButton)\n    .should('be.visible')\n    .click({ force: true });\ncy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].stakeModalAmountInput).should('have.value', '50.0');\ncy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].approveTokenSpendingButton)\n    .should('be.visible')\n    .click();\ncy.confirmMetamaskPermissionToSpend();\ncy.wait(2000);\ncy.contains('Transaction Submitted').should('be.visible');\nObject(_utils__WEBPACK_IMPORTED_MODULE_1__[\"clickAnywhereToClose\"])();\nObject(_utils__WEBPACK_IMPORTED_MODULE_1__[\"clickAnywhereToClose\"])();\ncy.wait(20000); // wait for transaction",
+                  "err": {},
+                  "uuid": "cf81936d-ea6e-433c-b1cc-8c2158516c99",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Should open lock modal and lock tokens",
+                  "fullTitle": "Guilds Lock tokens Should open lock modal and lock tokens",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].openStakeTokensModalBtn).click({ force: true });\ncy.wait(2000);\ncy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].stakeAmountMaxButton).click({ force: true });\ncy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].stakeModalAmountInput).should('have.value', '50.0');\ncy.findByTestId(_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].lockTokenSpendingButton).click({ force: true });\ncy.confirmMetamaskPermissionToSpend();\ncy.wait(100);\ncy.contains('Transaction Submitted').should('be.visible');\nObject(_utils__WEBPACK_IMPORTED_MODULE_1__[\"clickAnywhereToClose\"])();\nObject(_utils__WEBPACK_IMPORTED_MODULE_1__[\"clickAnywhereToClose\"])();\ncy.wait(15000); // wait for transaction",
+                  "err": {},
+                  "uuid": "c512eb60-57cf-446b-8db2-0a8807741734",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Should show member actions dropdown after locking tokens",
+                  "fullTitle": "Guilds Lock tokens Should show member actions dropdown after locking tokens",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].goToGuildsPage();\n_support_pageObjects_Guilds__WEBPACK_IMPORTED_MODULE_0__[\"default\"].clickOnGuildCard(_utils__WEBPACK_IMPORTED_MODULE_1__[\"DEPLOYED_GUILDS_NAMES\"].DXDGuild);\ncy.findByTestId('member-actions-button').should('be.visible');",
+                  "err": {},
+                  "uuid": "8a4afa01-ce82-4642-b2b4-eec895a51113",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "fa520bdb-89f8-42e9-9a8b-2a9ff26cc304",
+                "547b02ac-73af-45d1-bf44-d4c0dca6f425",
+                "cf81936d-ea6e-433c-b1cc-8c2158516c99",
+                "c512eb60-57cf-446b-8db2-0a8807741734",
+                "8a4afa01-ce82-4642-b2b4-eec895a51113"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [
+            "d62923e6-f5c3-4cb6-890f-dae925895c91"
+          ],
+          "pending": [
+            "d62923e6-f5c3-4cb6-890f-dae925895c91"
+          ],
+          "skipped": [],
+          "duration": 62745,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        " html": false,
+        " json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
